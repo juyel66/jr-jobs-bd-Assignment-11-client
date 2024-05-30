@@ -138,7 +138,7 @@ const Login = () => {
 
                   <div className="space-y-2">
                     <button onClick={() => handleGoogleLogin()} className="btn btn-outline text-[18px] "> <FcGoogle></FcGoogle>  Sign in with google</button>
-                    <button onClick={() => handleGithubLogin()} className="btn btn-outline text-[18px] "> <FaGithub></FaGithub>  Sign in with Github</button>
+                    {/* <button onClick={() => handleGithubLogin()} className="btn btn-outline text-[18px] "> <FaGithub></FaGithub>  Sign in with Github</button> */}
                   </div>
 
                 </div>

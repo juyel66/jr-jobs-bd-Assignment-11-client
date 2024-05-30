@@ -1,7 +1,24 @@
 # JR Jobs BD
-## Live Link: https://jr-job-bd.netlify.app/ / https://assignment-11-d5563.web.app
-## github Code Link CLient site : https://github.com/Porgramming-Hero-web-course/b9a11-client-side-juyel66
-## github Code Link Server site : https://github.com/Porgramming-Hero-web-course/b9a11-server-side-juyel66
+## assignment Live Link : https://jr-job-bd.netlify.app/
+## New Features added live site link: https://jr-jobs-bd-1.netlify.app/
+## github Code Link CLient site: https://github.com/juyel66/jr-jobs-bd-Assignment-11-client
+## github Code Link Server site: https://github.com/juyel66/jr-jobs-bd-Assignment-11-server
+## github Code Link CLient site ph-privet-repo: https://github.com/Porgramming-Hero-web-course/b9a11-client-side-juyel66
+## github Code Link Server site ph-privet-repo : https://github.com/Porgramming-Hero-web-course/b9a11-server-side-juyel66
+
+# new features:-
+## Pagination
+### Pagination is a process where a large list or dataset is divided into separate pages for easier navigation and viewing. It helps to organize and present a large amount of data in a manageable and user-friendly way.
+
+### Creating pagination involves the following steps:
+
+-**Filtering Data:** Firstly, all the data needs to be filtered based on certain criteria.
+
+-**Paginating the Data:** The filtered dataset is then divided into pages. The number of items displayed per page is determined by predefined code.
+
+-**Adding Pagination Buttons:** Pagination buttons are added to help users navigate to previous or next pages. These buttons allow users to easily navigate through different pages of the dataset.
+
+By following these steps, pagination is implemented. This process offers a simple, practical, and efficient way to paginate data.
 
 
 ## Features

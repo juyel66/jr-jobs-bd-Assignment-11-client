@@ -42,7 +42,7 @@ const AllJobCard = ({job}) => {
           </span>
          
         </div>
-        <div><h1 className="text-2xl font-bold">{name}</h1></div>
+        <div><h1 className="text-2xl font-bold"> {name}</h1></div>
   
         <div>
           <h1 className='mt-1 text-xl text-gray-800 '>
