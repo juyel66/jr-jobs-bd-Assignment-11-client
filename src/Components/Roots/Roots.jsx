@@ -8,13 +8,17 @@ const Roots = () => {
         <div>
              {/* className="lg:w-[1200px] mx-auto" */}
             <div> 
-            {/* <div className="container  mx-auto min-h-[calc(100vh-272px)]"> */}
+            {/* <div className="container  mx-auto "> */}
             {/* <div className="container mx-auto"> */}
-            <div className="lg:w-[1200px] mx-auto"><Header></Header></div>
-            <Outlet></Outlet>
+            <div className="lg:w-[1200px] mx-auto "><Header></Header></div>
+           <div className="min-h-[calc(100vh-272px)]">
+           <Outlet></Outlet>
+           </div>
             
             </div>
+            <div className="">
             <Footer></Footer>
+            </div>
         </div>
     );
 };

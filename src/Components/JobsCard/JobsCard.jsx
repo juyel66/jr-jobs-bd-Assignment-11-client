@@ -61,7 +61,7 @@ const JobsCard = ({job}) => {
       </div>
         </div>
       </motion.div>
-     </div>
+     </div> 
     )
   }
   JobsCard.propTypes ={

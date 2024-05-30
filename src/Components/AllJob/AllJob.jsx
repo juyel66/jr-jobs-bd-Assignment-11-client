@@ -52,75 +52,16 @@ const AllJob = () => {
       <Helmet><title>All Jobs</title></Helmet>
       <div>
         <div>
-          <section className="container px-4 mx-auto">
-            <div className="flex items-center gap-x-3"></div>
-            <div className="flex flex-col mt-6">
-              <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-                <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
-                  <div className="overflow-hidden border border-gray-200  md:rounded-lg">
-                    <table className="min-w-full divide-y divide-gray-200">
-                      <thead className="bg-gray-50">
-                        <tr className="flex">
-                          <th className="lg:flex ">
-                            <th className="flex lg:gap-8">
-                              <th className="flex lg:gap-[150px]">
-                                <th scope="col" className="py-3.5 px-4  font-bold text-left rtl:text-right">
-                                  <div className="flex items-center  ml-5">
-                                    <span>Title</span>
-                                  </div>
-                                </th>
-                                <button scope="col" className="px-4 py-3.5  text-left rtl:text-right font-bold">
-                                  <span>Deadline</span>
-                                </button>
-                              </th>
-                              <th className="flex lg:gap-[120px]">
-                                <th scope="col" className="px-4 py-3.5  text-left rtl:text-right">
-                                  <button className="flex  items-center gap-x-2">
-                                    <span>PriceRange</span>
-                                  </button>
-                                </th>
-                                <button scope="col" className="px-4 py-3.5  font-bold text-left mr-20 rtl:text-right text-black">
-                                  <span> Category</span>
-                                </button>
-                              </th>
-                            </th>
-                            <th className="flex lg:gap-[50px]">
-                              <button scope="col" className="px-4 lg:flex hidden py-3.5 font-bold text-left rtl:text-right">
-                                Posting-date
-                              </button>
-                              <th className="px-4 py-3.5 lg:flex hidden  font-bold text-left rtl:text-right">
-                                Details
-                              </th>
-                            </th>
-                          </th>
-                        </tr>
-                        {/* <tr className="lg:hidden ">
-                          <th scope="col" className="py-3.5 px-4 text-sm font-normal  text-gray-500">
-                            <div className="flex items-center gap-x-3">
-                              <span>Title</span>
-                            </div>
-                          </th>
-                          <th scope="col" className="px-4 py-3.5 text-sm font-normal  text-gray-500">
-                            <span>Deadline</span>
-                          </th>
-                          <th scope="col" className="px-4 py-3.5 text-sm font-normal  text-gray-500">
-                            <button className="flex items-center gap-x-2">
-                              <span>Price Range</span>
-                            </button>
-                          </th>
-                          <th scope="col" className="px-4 py-3.5 text-sm font-normal  text-gray-500">
-                            Category
-                          </th>
-                          <th scope="col" className="px-4 py-3.5 text-sm font-normal  text-gray-500">
-                            Description
-                          </th>
-                          <th className="px-4 py-3.5 text-sm font-normal  text-gray-500">
-                            Action
-                          </th>
-                        </tr> */}
-                      </thead>
-                      <tbody className="bg-white divide-y divide-gray-200">
-                        {allJobData
+      
+          
+         
+          
+
+                
+
+                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+                      
+                    {allJobData
                           .filter((job) => {
                             const jobTitleLowerCase = job.jobTitle.toLowerCase(); // Convert job title to lowercase
                             const searchLowerCase = search.toLowerCase(); // Convert search term to lowercase
@@ -130,13 +71,10 @@ const AllJob = () => {
                           .map((job, idx) => (
                             <AllJobCard key={job._id} idx={idx} job={job}></AllJobCard>
                           ))}
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+
+                    </div>
+  
+   
         </div>
       </div>
     </div>
