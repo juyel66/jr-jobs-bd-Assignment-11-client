@@ -22,51 +22,9 @@
 
 - **Responsive Design**: Ensured responsiveness and adaptability across various devices by utilizing Tailwind CSS and responsive design principles.
 
-### Usage
 
-To use this code in your project:
 
-- **Installation**: Clone the repository and install dependencies using `npm install`.
 
-- **Run Locally**: Start the development server with `npm run dev`.
-
-- **View Live**: Navigate to `http://localhost:5000` in your browser to view the live site.
-
-- **Explore Features**: Explore the different sections of the homepage, including swiper sliders, team member details, and contact information.
-
-### Navbar
-
-1. **Authentication and User Management**:
-   - Implemented user authentication using the `AuthContext` and `AuthProvider`.
-   - Users can log in and log out, with their authentication state managed globally.
-
-2. **Theme Switcher**:
-   - Added functionality to toggle between light and dark themes.
-   - The selected theme is stored in local storage for persistence across sessions.
-
-3. **Navigation Links**:
-   - Created navigation links for different sections of the application, including Home, All Jobs, Applied Jobs, Add A Job, Blogs, and Contact Us.
-   - The navigation links are conditionally rendered based on the user's authentication status.
-
-4. **Dropdown Menu**:
-   - Implemented a responsive dropdown menu for small screen sizes.
-   - Users can access navigation links conveniently from the dropdown menu on mobile devices.
-
-5. **User Profile**:
-   - Displayed the user's profile picture and name when logged in.
-   - Users can log out from the dropdown menu.
-
-6. **Log Out Button**:
-   - Added a log out button for both authenticated and unauthenticated users.
-   - Clicking the log out button clears the user's session and logs them out.
-
-7. **Authentication Redirects**:
-   - Redirected users to the login page if they try to access restricted routes without authentication.
-   - Redirected users to the home page after successful login or registration.
-
-8. **Responsive Design**:
-   - Ensured responsiveness across different screen sizes for optimal user experience.
-   - Used Tailwind CSS utility classes for styling and layout consistency.
 
 ### Usage
 
@@ -79,6 +37,34 @@ To use this code in your project:
 3. **View Live**: Navigate to `http://localhost:5000` in your browser to view the live site.
 
 4. **Explore Features**: Explore the navigation links, theme switcher, user authentication, and other features of the header component.
+
+
+   ### Steps
+1. Clone the repository:
+    ```sh
+    git clone client site https://github.com/juyel66/jr-bistro-house-client
+    ```
+    ```sh
+    git clone server site https://github.com/juyel66/jr-bistro-house-server
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd jr-bistro-house
+    ```
+3. Install NPM packages:
+    ```sh
+    npm install
+    ```
+4. Set up your environment variables. Create a `.env` file in the root directory and add the following:
+    ```env
+    MONGODB_URI=your_mongodb_connection_string
+    SECRET_KEY=your_secret_key
+    STRIPE_API_KEY=your_stripe_api_key
+    ```
+5. Start the application:
+    ```sh
+    npm start
+    ```
 
 
 
