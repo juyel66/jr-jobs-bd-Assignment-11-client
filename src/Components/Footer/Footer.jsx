@@ -12,7 +12,7 @@ const Footer = () => {
             <div className='flex  flex-wrap justify-center mt-6 -mx-4'>
               <a
                 href='#'
-                className='mx-4 text-white text-sm  transition-colors duration-300 hover:text-blue-500 '
+                className='mx-4 text-white text-sm  transition-colors duration-300 hover:text-blue-600 '
                 aria-label='Reddit'
               >
                 {' '}
