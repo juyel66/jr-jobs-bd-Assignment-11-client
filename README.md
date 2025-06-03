@@ -1,6 +1,5 @@
 # JR Jobs BD
-## live site link: https://jr-jobs-bd-1.netlify.app/
-## github Code Link Server site: https://github.com/juyel66/jr-jobs-bd-Assignment-11-server
+
 
 ## Features
 ### Home Page
