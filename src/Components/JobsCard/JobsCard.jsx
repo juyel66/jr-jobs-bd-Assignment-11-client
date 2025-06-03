@@ -1,71 +1,67 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
-const JobsCard = ({job}) => {
-    const {jobCategory,deadline,minimumPrice,maximumPrice,jobBannerUrl, name,jobTitle,jobPostingDate, _id} = job || {};
-    return (
-     <div className="mx-auto">
-       <motion.div
+const JobsCard = ({ job }) => {
+  const {
+    jobCategory,
+    deadline,
+    minimumPrice,
+    maximumPrice,
+    jobBannerUrl,
+    name,
+    jobTitle,
+    jobPostingDate,
+    _id,
+  } = job || {};
+
+  return (
+    <motion.div
       initial={{ scale: 0 }}
       animate={{ rotate: 360, scale: 1 }}
       transition={{
         type: "spring",
         stiffness: 260,
-        damping: 20
+        damping: 20,
       }}
-      
-      className="border-2 mt-10 border-green-500 lg:w-[380px] hover:bg-gray-200 hover:border-2 hover:border-green-500 rounded-lg ">
-        <div>
-            <img className=" w-full h-[150px] rounded-xl" src={jobBannerUrl} alt="" />
-
+      className="overflow-hidden transition duration-300 border border-green-500 rounded-lg shadow-md hover:shadow-xl hover:bg-gray-100"
+    >
+      <img
+        className="object-cover w-full h-48"
+        src={jobBannerUrl}
+        alt={jobTitle}
+      />
+      <div className="p-4 space-y-2">
+        <div className="flex items-center justify-between text-xs text-gray-500">
+          <span>Posting Date: {new Date(jobPostingDate).toLocaleDateString()}</span>
+          <span>Deadline: {new Date(deadline).toLocaleDateString()}</span>
         </div>
-        <div>
-        <div className='w-full px-4 py-3  rounded-md   transition-all'>
-        <div className='flex items-center justify-between'>
-          <span className='text-xs font-light text-gray-800 '>
-          
-          {/* Posting date: {jobPostingDate} */}
-          Posting Date:{new Date(jobPostingDate).toLocaleDateString()}
-          </span>
 
-         
-          <span className='text-xs font-light text-gray-800 '>
-          Deadline: {new Date(deadline).toLocaleDateString()}
-          </span>
-         
-        </div>
-        <div><h1 className="text-2xl font-bold">{name}</h1></div>
-  
-        <div>
-          <h1 className='mt-1 text-xl text-gray-800 '>
-            {jobTitle}
-          </h1>
-  
-          {/* <p className='mt-2 text-sm text-gray-600 '>
-            Lorem ipsum dolor sit adipisicing elit...
-          </p> */}
-       <div className="flex justify-between items-center ">
-       <p className='mt-2 text-sm font-bold text-gray-600 '>
-           <div>
-            <p>${minimumPrice}-${maximumPrice}</p>
-           </div>
-          </p>
-          <span className='px-3 mt-1 font-bold  py-1 text-[15px] text-blue-800 uppercase bg-blue-200 rounded-full '>
+        <h2 className="text-lg font-bold text-gray-800">{name}</h2>
+        <h3 className="text-gray-600 text-md">{jobTitle}</h3>
+
+        <div className="flex items-center justify-between">
+          <p className="font-semibold text-gray-700">${minimumPrice} - ${maximumPrice}</p>
+          <span className="px-2 py-1 text-xs font-semibold text-blue-800 bg-blue-200 rounded-full">
             {jobCategory}
           </span>
-          <p className='text-xs font-light text-gray-800'>Applicant: 0</p>
-       </div>
-       <Link to={`/job/${_id}`} className="btn w-full  mt-3 bg-green-400 text-white text-xl">View Details</Link>
         </div>
+
+        <p className="text-sm text-gray-500">Applicant: 0</p>
+
+        <Link
+          to={`/job/${_id}`}
+          className="block py-2 mt-2 font-semibold text-center text-white bg-green-500 rounded hover:bg-green-600"
+        >
+          View Details
+        </Link>
       </div>
-        </div>
-      </motion.div>
-     </div> 
-    )
-  }
-  JobsCard.propTypes ={
-    job: PropTypes.node.isRequired
-}
-  
-  export default JobsCard
+    </motion.div>
+  );
+};
+
+JobsCard.propTypes = {
+  job: PropTypes.object.isRequired,
+};
+
+export default JobsCard;

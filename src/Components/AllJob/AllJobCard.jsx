@@ -28,7 +28,7 @@ const AllJobCard = ({job}) => {
 
         </div>
         <div>
-        <div className='w-full px-4 py-3  rounded-md   transition-all'>
+        <div className='w-full px-4 py-3 transition-all rounded-md'>
         <div className='flex items-center justify-between'>
           <span className='text-xs font-light text-gray-800 '>
           
@@ -52,7 +52,7 @@ const AllJobCard = ({job}) => {
           {/* <p className='mt-2 text-sm text-gray-600 '>
             Lorem ipsum dolor sit adipisicing elit...
           </p> */}
-       <div className="flex justify-between items-center ">
+       <div className="flex items-center justify-between ">
        <p className='mt-2 text-sm font-bold text-gray-600 '>
            <div>
             <p>${minimumPrice}-${maximumPrice}</p>
@@ -63,7 +63,7 @@ const AllJobCard = ({job}) => {
           </span>
           <p className='text-xs font-light text-gray-800'>Applicant: 0</p>
        </div>
-       <Link to={`/job/${_id}`} className="btn w-full  mt-3 bg-green-400 text-white text-xl">View Details</Link>
+       <Link to={`/job/${_id}`} className="w-full mt-3 text-xl text-white bg-green-400 btn">View Details</Link>
         </div>
       </div>
         </div>

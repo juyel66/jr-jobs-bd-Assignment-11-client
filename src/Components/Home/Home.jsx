@@ -12,7 +12,7 @@ import { Helmet } from "react-helmet";
 
 const Home = () => {
   const jobs = useLoaderData();
-  console.log(jobs)
+  // console.log(jobs)
   return (
     <div 
 
@@ -24,7 +24,7 @@ const Home = () => {
   //   damping: 20
   // }}
   >
-      <div  className="lg:w-[1200px] mx-auto">
+      <div  className="">
         <Helmet> <title>Home</title></Helmet>
         {/* swiper sliders  */}
         <div>
@@ -45,9 +45,9 @@ const Home = () => {
                 }}
               >
                 <div className="hero-overlay bg-opacity-60"></div>
-                <div className="hero-content text-center text-neutral-content">
+                <div className="text-center hero-content text-neutral-content">
                   <div className="">
-                    <h1 className="mb-5 lg:text-5xl text-2xl font-bold">
+                    <h1 className="mb-5 text-2xl font-bold lg:text-5xl">
                       <Typewriter
                         words={["Crafting Dynamic Websites for Every Device"]}
                         loop={5}
@@ -74,9 +74,9 @@ const Home = () => {
                 }}
               >
                 <div className="hero-overlay bg-opacity-60"></div>
-                <div className="hero-content text-center text-neutral-content">
+                <div className="text-center hero-content text-neutral-content">
                   <div className="">
-                    <h1 className="mb-5 lg:text-5xl text-2xl font-bold">
+                    <h1 className="mb-5 text-2xl font-bold lg:text-5xl">
                       <Typewriter
                         words={["Unleashing Creativity in Graphic Design"]}
                         loop={5}
@@ -103,9 +103,9 @@ const Home = () => {
                 }}
               >
                 <div className="hero-overlay bg-opacity-60"></div>
-                <div className="hero-content text-center text-neutral-content">
+                <div className="text-center hero-content text-neutral-content">
                   <div className="">
-                    <h1 className="mb-5 lg:text-5xl text-2xl font-bold">
+                    <h1 className="mb-5 text-2xl font-bold lg:text-5xl">
                       <Typewriter
                         words={["Your Guide to Landing and Thriving in Remote Work"]}
                         loop={5}
@@ -132,9 +132,9 @@ const Home = () => {
                 }}
               >
                 <div className="hero-overlay bg-opacity-60"></div>
-                <div className="hero-content text-center text-neutral-content">
+                <div className="text-center hero-content text-neutral-content">
                   <div className="">
-                    <h1 className="mb-5 lg:text-5xl text-2xl font-bold">
+                    <h1 className="mb-5 text-2xl font-bold lg:text-5xl">
                       <Typewriter
                         words={["Embracing the Future of Work"]}
                         loop={5}
@@ -162,30 +162,30 @@ const Home = () => {
 
 
         <div>
-                <h1 className="text-center mt-20 text-4xl font-bold text-green-600">Meet Our Team</h1>
-                <p className="text-center text-green-500 font-bold">If you want to go for a tour with our team then you can contact us </p>
+                <h1 className="mt-20 text-4xl font-bold text-center text-green-600">Meet Our Team</h1>
+                <p className="font-bold text-center text-green-500">If you want to go for a tour with our team then you can contact us </p>
 
             </div>
 
-            <div className=" lg:flex justify-between mt-10">
-                <div className="item-center flex justify-center">
+            <div className="justify-between mt-10  lg:flex">
+                {/* <div className="flex justify-center item-center">
 
                     <div>
 
-                        <p className="text-3xl mb-5 font-bold">MD JUYEL RANA is one of these team members <Link to="/" className="text-blue-500 underline"> JR jobs BD</Link> company</p>
-                        <div className="join join-vertical w-full">
-                            <div  className="collapse collapse-arrow join-item border border-base-300">
+                        <p className="mb-5 text-3xl font-bold">MD JUYEL RANA is one of these team members <Link to="/" className="text-blue-500 underline"> JR jobs BD</Link> company</p>
+                        <div className="w-full join join-vertical">
+                            <div  className="border collapse collapse-arrow join-item border-base-300">
                                 <input type="radio" name="my-accordion-4" defaultChecked />
-                                <div className="collapse-title text-xl font-medium">
+                                <div className="text-xl font-medium collapse-title">
                                 Bachelors degree in marketing, communications, business, or a related field.
                                 </div>
                                 <div className="collapse-content">
                                     <p>Coordinate with event organizers and stakeholders to understand their online requirements and objectives for on-site events.</p>
                                 </div>
                             </div>
-                            <div className="collapse collapse-arrow join-item border border-base-300">
+                            <div className="border collapse collapse-arrow join-item border-base-300">
                                 <input type="radio" name="my-accordion-4" />
-                                <div className="collapse-title text-xl font-medium">
+                                <div className="text-xl font-medium collapse-title">
                                 Remote Customer Success Manager
 
 
@@ -194,54 +194,54 @@ const Home = () => {
                                     <p> Build and maintain strong relationships with customers, serving as their primary point of contact for product onboarding, training, and support.</p>
                                 </div>
                             </div>
-                            <div className="collapse collapse-arrow join-item border border-base-300">
+                            <div className="border collapse collapse-arrow join-item border-base-300">
                                 <input type="radio" name="my-accordion-4" />
-                                <div className="collapse-title text-xl font-medium">
+                                <div className="text-xl font-medium collapse-title">
                                 Remote UX/UI Designer
                                 </div>
                                 <div className="collapse-content">
                                     <p>Design intuitive and user-friendly interfaces for web and mobile applications, focusing on enhancing the overall user experience. </p>
                                 </div>
                             </div>
-                            <div className="collapse collapse-arrow join-item border border-base-300">
+                            <div className="border collapse collapse-arrow join-item border-base-300">
                                 <input type="radio" name="my-accordion-4" />
-                                <div className="collapse-title text-xl font-medium">
+                                <div className="text-xl font-medium collapse-title">
                                 Part-Time Administrative Assistant
                                 </div>
                                 <div className="collapse-content">
                                     <p>oin our team as a Part-Time Administrative Assistant, where you'll provide crucial support to our office operations. Duties include answering phones, </p>
                                 </div>
                             </div>
-                            <div className="collapse collapse-arrow join-item border border-base-300">
+                            <div className="border collapse collapse-arrow join-item border-base-300">
                                 <input type="radio" name="my-accordion-4" />
-                                <div className="collapse-title text-xl font-medium">
+                                <div className="text-xl font-medium collapse-title">
                                 Hybrid Marketing Coordinator
                                 </div>
                                 <div className="collapse-content">
                                     <p>Join our team as a Hybrid Marketing Coordinator, where you'll blend remote work with in-office collaboration. You'll support marketing campaigns,</p>
                                 </div>
                             </div>
-                            <div className="collapse collapse-arrow join-item border border-base-300">
+                            <div className="border collapse collapse-arrow join-item border-base-300">
                                 <input type="radio" name="my-accordion-4" />
-                                <div className="collapse-title text-xl font-medium">
+                                <div className="text-xl font-medium collapse-title">
                                 Remote Customer Success Manager
                                 </div>
                                 <div className="collapse-content">
                                     <p>Build and maintain strong relationships with customers, serving as their primary point of contact for product onboarding, training, and support.</p>
                                 </div>
                             </div>
-                            <div className="collapse collapse-arrow join-item border border-base-300">
+                            <div className="border collapse collapse-arrow join-item border-base-300">
                                 <input type="radio" name="my-accordion-4" />
-                                <div className="collapse-title text-xl font-medium">
+                                <div className="text-xl font-medium collapse-title">
                                 Hybrid Software Engineer
                                 </div>
                                 <div className="collapse-content">
                                     <p>Join our team as a Hybrid Software Engineer, where you'll have the opportunity to work both remotely and in our office environment. You'll be involved in designing,</p>
                                 </div>
                             </div>
-                            <div className="collapse collapse-arrow join-item border border-base-300">
+                            <div className="border collapse collapse-arrow join-item border-base-300">
                                 <input type="radio" name="my-accordion-4" />
-                                <div className="collapse-title text-xl font-medium">
+                                <div className="text-xl font-medium collapse-title">
                                 Hybrid Graphic Designer
                                 </div>
                                 <div className="collapse-content">
@@ -254,69 +254,69 @@ const Home = () => {
 
 
 
-                </div>
-                <div>
-                    <div data-aos="fade-down" className="card card-compact border-2 border-gray-400 bg-base-100 shadow-xl">
+                </div> */}
+                {/* <div>
+                    <div data-aos="fade-down" className="border-2 border-gray-400 shadow-xl card card-compact bg-base-100">
                         <figure><img className="lg:h-[450px] lg:w-[750px]  obj rounded-full" src="https://i.ibb.co/6yZL9Xf/IMG-20240227-125137-03.jpg" alt="Shoes" /></figure>
                         <div className="card-body">
-                            <h2 className="card-title font-bold">MD JUYEL RANA</h2>
+                            <h2 className="font-bold card-title">MD JUYEL RANA</h2>
                             <p className="font-bold text-[16px] break-all">Email: <span className="font-bold text-[15px]">mdjuyelrana.com.bd1@gmail.com</span></p>
                             <p>Founder at JR jobs BD</p>
-                            <div className="card-actions justify-center">
-                               <Link  to="https://www.facebook.com/juyel99730" className="w-full"> <button className="btn bg-green-500 w-full text-white text-xl">Contact Us</button></Link>
+                            <div className="justify-center card-actions">
+                               <Link  to="https://www.facebook.com/juyel99730" className="w-full"> <button className="w-full text-xl text-white bg-green-500 btn">Contact Us</button></Link>
                             </div>
                         </div>
                     </div>
 
-                </div>
+                </div> */}
 
             </div>
             
 
 
-            <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 mt-9" >
+            <div className="grid grid-cols-1 gap-5 lg:grid-cols-4 md:grid-cols-2 mt-9" >
 
-<div data-aos="fade-up" className="card card-compact border-2 border-green-500  bg-base-100 shadow-xl">
+<div data-aos="fade-up" className="border-2 border-green-500 shadow-xl card card-compact bg-base-100">
     <figure><img className="lg:h-[200px] pt-1 lg:w-[220px] rounded-full" src="https://i.ibb.co/Rjx9cyF/images-9.jpg" alt="Shoes" /></figure>
     <div className="card-body">
-        <h2 className="card-title font-bold">jimlan.smith</h2>
+        <h2 className="font-bold card-title">jimlan.smith</h2>
         <p className="font-bold ">Email: Jimla1222@gmail.com</p>
-        <div className="card-actions justify-center">
-            <button className="btn bg-green-500 w-full text-white text-xl ">view Details</button>
+        <div className="justify-center card-actions">
+            <button className="w-full text-xl text-white bg-green-500 btn ">view Details</button>
         </div>
     </div>
 </div>
 
 
-<div data-aos="fade-down" className="card card-compact border-2 border-green-500  bg-base-100 shadow-xl">
+<div data-aos="fade-down" className="border-2 border-green-500 shadow-xl card card-compact bg-base-100">
     <figure><img className="lg:h-[200px] pt-1 lg:w-[220px] rounded-full" src="https://i.ibb.co/NZV6C5W/download-1.jpg" alt="Shoes" /></figure>
     <div className="card-body">
-        <h2 className="card-title font-bold">Jsmith</h2>
+        <h2 className="font-bold card-title">Jsmith</h2>
         <p className="font-bold">Email: jsmithjhon122@gmail.com</p>
-        <div className="card-actions justify-end">
-            <button className="btn btn bg-green-500 w-full text-white text-xl  ">View Details</button>
+        <div className="justify-end card-actions">
+            <button className="w-full text-xl text-white bg-green-500 btn ">View Details</button>
         </div>
     </div>
 </div>
 
-<div data-aos="fade-up" className="card card-compact border-2 border-green-500  bg-base-100 shadow-xl">
+<div data-aos="fade-up" className="border-2 border-green-500 shadow-xl card card-compact bg-base-100">
     <figure><img className="lg:h-[200px] pt-1 lg:w-[220px] rounded-full" src="https://i.ibb.co/HYx8MXV/download-2.jpg" alt="Shoes" /></figure>
     <div className="card-body">
-        <h2 className="card-title font-bold">Smith.john!</h2>
+        <h2 className="font-bold card-title">Smith.john!</h2>
         <p className="font-bold">Email: smithjhon122@gmail.com</p>
-        <div className="card-actions justify-end">
-            <button className="btn btn bg-green-500 w-full text-white text-xl ">View Details</button>
+        <div className="justify-end card-actions">
+            <button className="w-full text-xl text-white bg-green-500 btn ">View Details</button>
         </div>
     </div>
 </div>
 
-<div data-aos="fade-down" className="card border-2 border-green-500 card-compact  bg-base-100 shadow-xl">
+<div data-aos="fade-down" className="border-2 border-green-500 shadow-xl card card-compact bg-base-100">
     <figure><img className="h-[200px] pt-1 w-[220px] rounded-full" src="https://i.ibb.co/5kR0BHf/download-3.jpg" alt="Shoes" /></figure>
     <div className="card-body">
-        <h2 className="card-title font-bold">Johns</h2>
+        <h2 className="font-bold card-title">Johns</h2>
         <p className="font-bold">Email: jhon122@gmail.com</p>
-        <div className="card-actions justify-end">
-            <button className="btn btn bg-green-500 w-full text-white text-xl ">View Details</button>
+        <div className="justify-end card-actions">
+            <button className="w-full text-xl text-white bg-green-500 btn ">View Details</button>
         </div>
     </div>
 </div>
@@ -330,7 +330,7 @@ const Home = () => {
 
 
         <div className="mt-5">
-          <p className="text-green-500 text-center font-bold mt-10 text-xl">If you want to contact us and know about our jobs then <br /> you can contact this address</p>
+          <p className="mt-10 text-xl font-bold text-center text-green-500">If you want to contact us and know about our jobs then <br /> you can contact this address</p>
           <Properties></Properties>
         </div>
       </div>

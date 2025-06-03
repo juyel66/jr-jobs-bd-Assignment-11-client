@@ -10,12 +10,12 @@ const TabCategories = ({ jobs }) => {
     
   return (
     <Tabs>
-      <div className="lg:w-[1200px] mx-auto">
+      <div className="">
         <h1 
          style={{ scale }}
 
-        className="text-2xl text-center font-bold mt-10"> Job Categories</h1>
-        <div className="flex items-center mt-5 justify-center">
+        className="mt-10 text-2xl font-bold text-center"> Job Categories</h1>
+        <div className="flex items-center justify-center mt-5">
           <TabList>
             <Tab>
               <span className="lg:text-xl lg:font-bold ">On Site</span>
@@ -33,7 +33,7 @@ const TabCategories = ({ jobs }) => {
         </div>
 
         <TabPanel>
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
+          <div className="grid grid-cols-1 gap-5 lg:grid-cols-3 md:grid-cols-2">
             {jobs
               .filter((j) => j.jobCategory === "On Site")
               .map((job) => (
@@ -43,7 +43,7 @@ const TabCategories = ({ jobs }) => {
         </TabPanel>
 
         <TabPanel>
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
+          <div className="grid grid-cols-1 gap-5 lg:grid-cols-3 md:grid-cols-2">
             {jobs
               .filter((j) => j.jobCategory === "Remote")
               .map((job) => (
@@ -53,7 +53,7 @@ const TabCategories = ({ jobs }) => {
         </TabPanel>
 
         <TabPanel>
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
+          <div className="grid grid-cols-1 gap-5 lg:grid-cols-3 md:grid-cols-2">
             {jobs
               .filter((j) => j.jobCategory === "Hybrid")
               .map((job) => (
@@ -63,7 +63,7 @@ const TabCategories = ({ jobs }) => {
         </TabPanel>
 
         <TabPanel>
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
+          <div className="grid grid-cols-1 gap-5 lg:grid-cols-3 md:grid-cols-2">
             {jobs
               .filter((j) => j.jobCategory === "Part-Time")
               .map((job) => (
