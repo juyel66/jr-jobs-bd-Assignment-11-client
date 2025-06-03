@@ -1,5 +1,6 @@
 # JR Jobs BD
-
+## live site link: https://jr-jobs-bd.web.app/
+## live site link: https://jr-jobs-bd.firebaseapp.com/
 
 ## Features
 ### Home Page
