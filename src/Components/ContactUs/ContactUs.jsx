@@ -41,7 +41,7 @@ const ContactUs = () => {
         zoom: 20
     };
     return (
-        <div className="lg:w-[1200px] mx-auto">
+        <div className="">
               <div>
             <Helmet><title>Contact </title> </Helmet>
 
@@ -90,7 +90,7 @@ const ContactUs = () => {
 
 
             {/* form  */}
-            <div className="mt-10 mb-5 font-bold text-center">
+            <div className="mt-10 mb-5 font-bold text-center ">
                 <p className="text-5xl text-green-500">How to contact us</p>
                 <p className="text-xl text-green-500">
                     If you want to contact us directly, you can contact us by calling the <br /> number given below or by emailing us directly.</p>
