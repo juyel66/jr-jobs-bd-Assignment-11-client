@@ -35,9 +35,9 @@ const AllJob = () => {
 
   if (isLoading) return (
     <div>
-      <p className="text-3xl text-center lg:mt-40 mt-10">Wait Please...</p>
-      <div className="flex mt-10 justify-center">
-        <span className="loading loading-spinner w-40"></span>
+      <p className="mt-10 text-3xl text-center lg:mt-40">Wait Please...</p>
+      <div className="flex justify-center mt-10">
+        <span className="w-40 loading loading-spinner"></span>
       </div>
     </div>
   );
@@ -58,7 +58,7 @@ const AllJob = () => {
   return (
     <div className="lg:w-[1200px] mx-auto mb-10">
       <Helmet><title>All Jobs</title></Helmet>
-      <h1 className="text-3xl text-center font-bold mb-5 mt-5">
+      <h1 className="mt-5 mb-5 text-3xl font-bold text-center">
         Total Job: {filteredJobs.length}
       </h1>
       <div className="flex items-center justify-center">
@@ -70,14 +70,14 @@ const AllJob = () => {
         </label>
       </div>
       <div>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
           {currentJobs.map((job, idx) => (
             <AllJobCard key={job._id} idx={idx} job={job}></AllJobCard>
           ))}
         </div>
 
         {/* Pagination Controls */}
-        <div className="flex justify-center items-center mt-10">
+        <div className="flex items-center justify-center mt-10">
           <button
             onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
             disabled={currentPage === 1}
@@ -111,20 +111,7 @@ const AllJob = () => {
         </div>
 
 
-        {/* <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
-                      
-                      {allJobData
-                            .filter((job) => {
-                              const jobTitleLowerCase = job.jobTitle.toLowerCase(); // Convert job title to lowercase
-                              const searchLowerCase = search.toLowerCase(); // Convert search term to lowercase
-                              const searchTitle = searchLowerCase.charAt(0).toUpperCase() + searchLowerCase.slice(1); // Convert first character to uppercase
-                              return searchLowerCase === '' ? true : jobTitleLowerCase.includes(searchLowerCase) || jobTitleLowerCase.includes(searchTitle);
-                            })
-                            .map((job, idx) => (
-                              <AllJobCard key={job._id} idx={idx} job={job}></AllJobCard>
-                            ))}
-  
-                      </div> */}
+
 
 
         
